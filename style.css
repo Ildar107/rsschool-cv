@@ -13,13 +13,12 @@ body {
 
 main {
   display:grid;
-  grid-template-rows: 250px 350px 704px 414px 150px;
+  grid-template-rows: 250px 350px 704px 414px 280px 150px;
   grid-gap: 10px;
   max-width: 1024px;
   margin: 50px auto;
 }
 
-header,
 article {
   padding: 20px;
   background-color: #ffffff;
