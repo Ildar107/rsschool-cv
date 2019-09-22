@@ -74,4 +74,4 @@ November 2018 — currently<br>  [I-Teco Company](https://www.i-teco.ru/)<br> C#
  * https://ulearn.me/ - LINQ course
 
 ### English
-I participated in a marathon from https://www.lingoda.com/ru/. It's 1 lesson (during 1 hour) per day for 3 months. Also everyday I need read a lot of information in English cause it's nessery for my work.
+I participated in a marathon from [Lingoda](https://www.lingoda.com/ru/). It's 1 lesson (during 1 hour) per day for 3 months. Also everyday I need read a lot of information in English cause it's nessery for my work.
