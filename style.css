@@ -24,3 +24,33 @@ header, article {
     background-color: #fff;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
+
+h2{
+    margin-bottom: 20px;
+}
+
+.summary {
+    margin: 20px 0;
+}
+
+#photo{
+    float: right;
+    width: 155px;
+    height: 200px;
+}
+
+ul, ol{
+    padding: 10px 20px;
+}
+
+code {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #ded5d57a;
+    font-size: 12px;
+    background-color: #e2e2e27a;
+}
+
+.experience-item{
+    margin:  20px 0;
+}
