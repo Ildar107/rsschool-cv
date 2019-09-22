@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CV</title>
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+        <img src="./photo.jpg" id="photo" alt="cv photo">
+        <h2>Ildar Garifullin</h2>
+        <p> email: ildar107wk@gmail.com</p>
+        <p>tel: 8-963-144-21-88</p>
+        <p class="summary">I am c# software developer with 2+ years experience.
+           My goal is to improve my professional skills in order 
+           to get a more interesting and complex project / work.</p>
+    </header>
+    <article class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>C#</li>
+          <li>SQL</li>
+          <li>JS</li>
+          <li>ASP.NET WebForms</li>
+          <li>ASP.NET MVC</li>
+          <li>Entiity Framework</li>
+          <li>SVN</li>
+          <li>Git</li>
+          <li>JQuery</li>
+          <li>Bootstrap</li>
+        </ul>
+      </article>
+      <article class="code-example">
+        <h2>Code example</h2>
+        <pre><code>
+  function getCreditLimit() {
+      preloader.showPreloader();
+      $.ajax({
+          type: "POST",
+          url: "Create_Request.aspx/GetCreditLimit",
+          data: JSON.stringify({contractCode: ITRequestInitialData.contractCode}),
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          success: function (output) {
+              var config = output.d;
+              preloader.hidePreloader();
+              ITRequestInitialData.balance = config.Balance;
+              ITRequestInitialData.creditLimit = config.CreditLimit;
+              ITRequestInitialData.overDue = config.OverDue;
+              ITRequestInitialData.overDueDays = config.OverDueDays;
+              ITRequestInitialData.receivables = config.Receivables;
+              ITRequestInitialData.productCart = cart.items;
+              $('input[name="ctl00$MainContent$DataForITRequest"]').val("");
+              $('input[name="ctl00$MainContent$DataForITRequest"]').val(JSON.stringify(ITRequestInitialData));
+              $('input[name="ctl00$MainContent$openRequestEdit"]').click();
+          },
+          error: function (xhr, status, error) {
+              preloader.hidePreloader();
+              HandlerAJAXError(xhr, status, error, function () {
+                  history.back();
+              });
+          }
+      });
+  } 
+          </code>
+        </pre>
+      </article>
+      <article class="experience">
+        <h2>Experience</h2>
+          <section class="experience-item">
+          <p>July 2017 — november 2018</p>
+          <p><a href="http://www.it.ru/" target="_blank">Аплана БР</a></p>
+          <p>C# fullstack developer</p>
+          <ol>
+            <li>Developing CRM system on bpm’online (C#, js).</li>
+            <li>Developing Web-application (ASP.NET WebForms).</li>
+          </ol>
+        </section>
+        <hr>
+        <section class="experience-item">
+            <p>November 2018 — currently</p>
+            <p><a href="https://www.i-teco.ru/" target="_blank">I-Teco Company</a></p>
+            <p>C# developer</p>
+            <ol>
+              <li>Developing Web-application for bank system(Silverlight).</li>
+            </ol>
+        </section>
+      </article>
+      <article class="english">
+        <h2>English</h2>
+        <p>I participated in a marathon from <a href="https://www.lingoda.com/ru/" target="_blank">Lingoda</a>. 
+          It’s 1 lesson (during 1 hour) per day for 3 months. Also everyday I need read a lot of information in English cause it’s nessery for my work.</p>
+      </article>
+  </main>
+</body>
+</html>
